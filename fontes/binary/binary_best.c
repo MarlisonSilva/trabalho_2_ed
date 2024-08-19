@@ -27,8 +27,6 @@ void btinsert(struct node** r, struct node* n) {
     (*r) = n;
 }
 
-
-// busca binária
 struct node* search(struct node* r, int v) {
     if (r != NULL) {
         if (v < r->v)
@@ -47,17 +45,13 @@ int main(int argc, char **argv) {
     for (int i = 0; i < n; i++) {
         btinsert(&r, new_node(rand() % (n*10)));
     }
-    // Inicializando variáveis de tempo
     struct timespec start, end;
     int v = r->v;
-    // Guardando valores de tempo
     clock_gettime(CLOCK_MONOTONIC, &start);
     struct node* aux = search(r, v);
     clock_gettime(CLOCK_MONOTONIC, &end);
 
-    // Calculando o tempo
     unsigned  time = (end.tv_sec * 1e9 + end.tv_nsec) - (start.tv_sec * 1e9 + start.tv_nsec);
-    // Mostrando o tempo para iterate
     printf("%u\n", time);
     return 0;
 }
