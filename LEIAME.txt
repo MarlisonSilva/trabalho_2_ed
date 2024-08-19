@@ -22,9 +22,9 @@ sh iterate.sh <numero de execuções em cada iteração> <tamanho inicial> <de q
 
 Recomendação de formato:
 ex. 1:
-sh iterate.sh 100 100 100 10000 ./fontes/avl_medium ./graficos/avl/avl_medium
+sh iterate.sh 100 100 100 10000 ./fontes/avl/avl_medium ./graficos/avl/avl_medium
 
 ex. 2:
-sh iterate.sh 100 100 100 10000 ./fontes/binary_worst ./graficos/binary/binary_worst
+sh iterate.sh 100 100 100 10000 ./fontes/binary/binary_worst ./graficos/binary/binary_worst
 
 Estes exemplos geram 100x árvores com as quantidades de [100, 200, 300, ..., 9700, 9800, 9900, 10000] elementos e guardam o txt na pasta graficos dentro de uma subpasta.
