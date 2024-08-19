@@ -1,0 +1,21 @@
+EXECUÇÃO UNITÁRIA:
+PARA EXECUTAR OS PROGRAMAS DESTE TRABALHO, ENTRAR EM "fontes" E UTILIZAR O COMPILADOR DE SUA PREFERÊNCIA.
+Por exemplo, com o gcc e o arquvio btinsert_avl.c:
+gcc -o avl_medium avl_medium.c
+
+Assim, ao executar o arquivo passar como parâmetro o número de elementos desejado na árvore.
+Por exemplo, para gerar uma árvore com 1000 elementos:
+./avl_medium 1000
+
+EXECUÇÃO COM GERAÇÃO DO TXT:
+PARA EXECUTAR OS PROGRAMAS DESTE TRABALHO, ENTRAR EM "fontes" E UTILIZAR O COMPILADOR DE SUA PREFERÊNCIA.
+Por exemplo, com o gcc e o arquvio btinsert_avl.c:
+gcc -o avl_medium avl_medium.c
+
+Assim, ao executar o arquivo passar os seguinte parâmetros:
+sh iterate.sh <numero de execuções em cada iteração> <tamanho inicial> <de quanto em quanto incrementa> <tamanho final> <caminho pro programa> <nome do txt>
+Por exemplo, para gerar 100x árvores com as quantidades de [100, 200, 300, ..., 9700, 9800, 9900, 10000] elementos, utilizar:
+sudo sh iterate.sh 100 100 100 10000 ./avl_medium avl_medium
+
+recomendação:
+sudo sh iterate.sh 100 100 100 1000 ./fontes/avl_medium ./graficos/avl_medium
